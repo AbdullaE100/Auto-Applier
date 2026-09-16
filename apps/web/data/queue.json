@@ -1,0 +1,53 @@
+[
+  {
+    "id": "q_cloudflare",
+    "company": "Cloudflare",
+    "jobTitle": "Software Systems Engineer",
+    "platform": "Greenhouse",
+    "url": "https://boards.greenhouse.io/cloudflare",
+    "matchScore": 95,
+    "matchGrade": "Exceptional Match",
+    "status": "Submitted",
+    "submittedAt": "2026-09-16T10:40:37.313Z"
+  },
+  {
+    "id": "q_figma",
+    "company": "Figma",
+    "jobTitle": "Full Stack Engineer - Collaboration Platform",
+    "platform": "Greenhouse",
+    "url": "https://boards.greenhouse.io/figma",
+    "matchScore": 92,
+    "matchGrade": "Exceptional Match",
+    "status": "Queued"
+  },
+  {
+    "id": "q_linear",
+    "company": "Linear",
+    "jobTitle": "Product Systems Engineer",
+    "platform": "Lever",
+    "url": "https://jobs.lever.co/linear",
+    "matchScore": 90,
+    "matchGrade": "Exceptional Match",
+    "status": "Queued"
+  },
+  {
+    "id": "q_airbnb",
+    "company": "Airbnb",
+    "jobTitle": "Software Engineer - Full Stack Core",
+    "platform": "Greenhouse",
+    "url": "https://boards.greenhouse.io/airbnb",
+    "matchScore": 88,
+    "matchGrade": "Strong Match",
+    "status": "Queued"
+  },
+  {
+    "id": "q_linkedin",
+    "company": "LinkedIn Easy Apply",
+    "jobTitle": "Software Engineer (Easy Apply Openings)",
+    "platform": "LinkedIn",
+    "url": "https://www.linkedin.com/jobs/search/?keywords=software%20engineer&f_AL=true",
+    "matchScore": 94,
+    "matchGrade": "Exceptional Match",
+    "status": "Queued"
+  }
+]

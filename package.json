@@ -1,0 +1,21 @@
+{
+  "name": "jobflow-ai-saas",
+  "version": "1.0.0",
+  "description": "JobFlow AI - Commercial Auto Job Applier SaaS (Manifest V3 Chrome Extension + Cloud SaaS Platform)",
+  "main": "apps/web/server.js",
+  "scripts": {
+    "start": "node apps/web/server.js",
+    "test": "node test-system.js"
+  },
+  "keywords": [
+    "job-applier",
+    "greenhouse",
+    "lever",
+    "ashby",
+    "chrome-extension",
+    "saas",
+    "ai"
+  ],
+  "author": "JobFlow AI",
+  "license": "MIT"
+}
