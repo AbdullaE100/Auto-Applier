@@ -1,21 +1,23 @@
 {
-  "name": "jobflow-ai-saas",
+  "name": "jobflow-ai",
   "version": "1.0.0",
-  "description": "JobFlow AI - Commercial Auto Job Applier SaaS (Manifest V3 Chrome Extension + Cloud SaaS Platform)",
-  "main": "apps/web/server.js",
+  "private": true,
+  "description": "JobFlow AI - job application autofill SaaS: Chrome extension + web dashboard on Supabase",
   "scripts": {
-    "start": "node apps/web/server.js",
-    "test": "node test-system.js"
+    "build": "node scripts/build.js",
+    "sync": "node scripts/sync-shared.js",
+    "test": "node --test tests/answer-engine.test.js tests/linkedin-flow.test.js",
+    "test:e2e": "node tests/e2e-extension.js && node tests/e2e-web.js",
+    "dev:web": "npx --yes serve web -l 5173",
+    "db:push": "supabase db push",
+    "functions:deploy": "supabase functions deploy parse-cv && supabase functions deploy answer-question"
   },
-  "keywords": [
-    "job-applier",
-    "greenhouse",
-    "lever",
-    "ashby",
-    "chrome-extension",
-    "saas",
-    "ai"
-  ],
-  "author": "JobFlow AI",
-  "license": "MIT"
+  "devDependencies": {
+    "@supabase/supabase-js": "^2.116.0",
+    "jsdom": "^24.1.3",
+    "mammoth": "^1.12.3",
+    "pdfjs-dist": "^4.10.38",
+    "playwright-core": "^1.63.0"
+  },
+  "license": "UNLICENSED"
 }

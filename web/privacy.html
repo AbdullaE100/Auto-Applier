@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · JobFlow AI</title>
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="assets/ui.css">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header"><div class="container"><a class="logo" href="index.html"><span class="logo-mark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h8"/><path d="M5 12h13"/><path d="M5 17h5"/><path d="m14.5 8.5 3.5 3.5-3.5 3.5"/></svg></span>JobFlow AI</a><nav class="site-nav"><a class="btn btn-ghost" href="login.html">Sign in</a></nav></div></header>
+  <main class="legal-page">
+    <h1>Privacy Policy</h1>
+    <p class="subtle">Last updated: 16 September 2026</p>
+
+    <p>This policy explains what JobFlow AI ("JobFlow", "we") collects when you use our Chrome extension and website, why, and the choices you have. It is also the privacy disclosure for our Chrome Web Store listing.</p>
+
+    <h2>What we collect</h2>
+    <ul>
+      <li><strong>Account data:</strong> your email address and, if you use Google sign-in, your name.</li>
+      <li><strong>Your CV and profile:</strong> the CV file you upload, the details extracted from it (contact details, work history, education, skills) and anything you edit.</li>
+      <li><strong>Questionnaire answers and preferences:</strong> location, work authorization and visa status, notice period, salary expectations, education level and, only if you choose to provide them, voluntary equal-opportunity answers.</li>
+      <li><strong>Application activity:</strong> job title, company, job link, date and status for applications you send with JobFlow, and screening questions you ask JobFlow to answer or save.</li>
+      <li><strong>Usage counters:</strong> how many applications and AI answers you use, to enforce plan limits.</li>
+    </ul>
+    <p>The extension only runs on LinkedIn Jobs pages and supported career sites (Greenhouse, Lever, Ashby, Workable). It reads the application form on the page you're on so it can fill it in. We do not read your browsing history, messages, or other tabs.</p>
+
+    <h2>How we use it</h2>
+    <ul>
+      <li>To fill in job applications for you and keep your answers consistent.</li>
+      <li>To extract details from your CV and draft answers to screening questions with AI.</li>
+      <li>To show your application history and usage in your dashboard.</li>
+      <li>To keep the service secure and prevent abuse.</li>
+    </ul>
+    <p>We do not sell your personal data, use it for advertising, or use it to decide creditworthiness or lending.</p>
+
+    <h2>AI processing</h2>
+    <p>When you upload a CV or JobFlow needs to answer a new question, the relevant text (your CV text, profile facts and the question) is sent to our AI provider through OpenRouter to generate a result. Providers process this data to return a response and are not permitted by us to use it for advertising.</p>
+
+    <h2>Where data is stored</h2>
+    <p>Data is stored with Supabase (database, authentication and file storage) with encryption in transit and at rest. Access is restricted by row-level security so each account can only read its own data. Your session token is stored in the extension's local storage on your device.</p>
+
+    <h2>Retention and deletion</h2>
+    <p>We keep your data while your account is active. You can export your data from the dashboard at any time. To delete your account and all associated data, use "Request account deletion" in Settings or email us; we complete deletion within 30 days.</p>
+
+    <h2>Your rights</h2>
+    <p>Depending on where you live (for example under the GDPR, UK GDPR, the UAE PDPL or California law) you may have the right to access, correct, export or delete your data and to object to processing. Contact us to exercise these rights.</p>
+
+    <h2>Children</h2>
+    <p>JobFlow is not intended for anyone under 18.</p>
+
+    <h2>Changes</h2>
+    <p>We'll post updates here and notify you by email for material changes.</p>
+
+    <h2>Contact</h2>
+    <p>Email <a data-support-link href="#">our support team</a>.</p>
+  </main>
+  <footer class="site-footer" style="margin-top:0"><div class="container"><span>© JobFlow AI</span><nav><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav></div></footer>
+  <script src="config.js"></script>
+  <script>document.querySelectorAll('[data-support-link]').forEach((a) => { a.href = `mailto:${window.JOBFLOW_CONFIG.supportEmail}`; a.textContent = window.JOBFLOW_CONFIG.supportEmail; });</script>
+</body>
+</html>

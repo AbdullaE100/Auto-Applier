@@ -1,0 +1,83 @@
+{
+  "manifest_version": 3,
+  "name": "JobFlow AI \u2013 Job Application Autofill",
+  "short_name": "JobFlow AI",
+  "version": "1.0.0",
+  "description": "Upload your CV once. JobFlow fills LinkedIn Easy Apply and career-site applications with truthful, tailored answers.",
+  "minimum_chrome_version": "116",
+  "permissions": [
+    "storage",
+    "identity",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://*.supabase.co/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "JobFlow AI",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "32": "icons/icon32.png",
+      "48": "icons/icon48.png"
+    }
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.linkedin.com/*"
+      ],
+      "js": [
+        "shared/countries.js",
+        "shared/questions.js",
+        "shared/answer-engine.js",
+        "shared/settings.js",
+        "content/autofill-core.js",
+        "content/bridge.js",
+        "content/linkedin.js"
+      ],
+      "css": [
+        "content/content.css"
+      ],
+      "run_at": "document_idle"
+    },
+    {
+      "matches": [
+        "https://boards.greenhouse.io/*",
+        "https://job-boards.greenhouse.io/*",
+        "https://jobs.lever.co/*",
+        "https://jobs.ashbyhq.com/*",
+        "https://apply.workable.com/*"
+      ],
+      "js": [
+        "shared/countries.js",
+        "shared/questions.js",
+        "shared/answer-engine.js",
+        "shared/settings.js",
+        "content/autofill-core.js",
+        "content/bridge.js",
+        "content/ats.js"
+      ],
+      "css": [
+        "content/content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'"
+  },
+  "options_ui": {
+    "page": "settings/settings.html",
+    "open_in_tab": true
+  }
+}

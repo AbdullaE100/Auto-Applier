@@ -1,0 +1,8 @@
+# Supabase CLI config. Run: supabase link --project-ref <ref> && supabase db push
+project_id = "jobflow-ai"
+
+[functions.parse-cv]
+verify_jwt = true
+
+[functions.answer-question]
+verify_jwt = true

@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JobFlow AI Settings</title>
+  <link rel="icon" href="../icons/icon48.png">
+  <link rel="stylesheet" href="../shared/ui.css">
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <header class="top">
+    <div class="top-inner">
+      <span class="logo"><span class="logo-mark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h8"/><path d="M5 12h13"/><path d="M5 17h5"/><path d="m14.5 8.5 3.5 3.5-3.5 3.5"/></svg></span>JobFlow AI</span>
+      <span class="subtle" id="who"></span>
+    </div>
+  </header>
+
+  <main class="wrap" id="main">
+    <div class="loading"><span class="spinner"></span></div>
+  </main>
+
+  <div class="savebar" id="savebar" hidden>
+    <div class="savebar-inner">
+      <span id="dirty-text">You have unsaved changes</span>
+      <span class="spacer"></span>
+      <button class="btn btn-ghost" id="discard" type="button">Discard</button>
+      <button class="btn btn-primary" id="save" type="button">Save changes</button>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" hidden></div>
+
+  <script src="../config.js"></script>
+  <script src="../lib/supabase.js"></script>
+  <script src="../shared/countries.js"></script>
+  <script src="../shared/settings.js"></script>
+  <script src="../shared/client.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>

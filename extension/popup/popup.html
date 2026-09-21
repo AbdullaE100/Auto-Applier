@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JobFlow AI</title>
+  <link rel="stylesheet" href="../shared/ui.css">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <header class="top">
+    <span class="logo"><span class="logo-mark"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 7h8"/><path d="M5 12h13"/><path d="M5 17h5"/><path d="m14.5 8.5 3.5 3.5-3.5 3.5"/></svg></span>JobFlow AI</span>
+    <span class="pill" id="plan-pill" hidden></span>
+  </header>
+  <main id="root"><div class="loading"><span class="spinner"></span></div></main>
+
+  <script src="../config.js"></script>
+  <script src="../lib/supabase.js"></script>
+  <script src="../shared/countries.js"></script>
+  <script src="../shared/settings.js"></script>
+  <script src="../shared/client.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
